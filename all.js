@@ -1,4 +1,5 @@
-// Promise.all([...])	✅ Sabhi promises resolve hone par ek array return karta hai, ek bhi fail hua to reject ho jata hai.
+// Promise.all([...])	returns  results only if all the promise are resolved  otherwise if any reject.
+ // then promise rejected.✅ Sabhi promises resolve hone par ek array return karta hai, ek bhi fail hua to reject ho jata hai.
 
 let p1 = new Promise((resolved,rejeced )=> setTimeout(() => resolved("🍕 Pizza"), 3000));
 let p2 = new Promise((resolved, rejected)=> setTimeout(() => resolved("🍔 Burger"), 2000));
