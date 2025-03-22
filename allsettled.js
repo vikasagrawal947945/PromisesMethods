@@ -1,4 +1,4 @@
-// Promise.allSettled() sabhi promises ke complete hone ka wait karta hai, chahe koi fail ho ya success ho, aur ek array return karta hai jo har promise ka status batata hai.
+// Promise.allSettled()  it waits for each promise to be resolved  or rejected and return the array in which status of each promise is showing 
 // or ✅ Sabhi promises settle hone ke baad ek array return karta hai (chahe resolve ho ya reject).
 let p1 = new Promise((resolve) => setTimeout(() => resolve("✅ Task 1 done"), 2000));
 let p2 = new Promise((reject) => setTimeout(() => reject("❌ Task 2 failed"), 1000));
